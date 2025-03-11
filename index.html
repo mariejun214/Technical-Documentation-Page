@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main id="main-doc">
+    
+       <nav id="navbar">
+            <header>Networking Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#networking_basics">Networking Basics</a></li>
+                <li><a class="nav-link" href="#setting_up_a_home_network">Setting Up a Home Network</a></li>
+                <li><a class="nav-link" href="#IP_Address_and_DHCP">IP Address and DHCP</a></li>
+                <li><a class="nav-link" href="#network_security">Network Security</a></li>
+                <li><a class="nav-link" href="#troubleshooting_common_issues">Troubleshooting Common Issues</a></li>
+                <li><a class="nav-link" href="#advanced_home_network_setup">Advanced Home Network Setup</a></li>
+                <li><a class="nav-link" href="#wireless_network_enhancements">Wireless Network Enhancements </a></li>
+                <li><a class="nav-link" href="#smart_home_integration">Smart Home Integration </a></li>
+                <li><a class="nav-link" href="#network_monitoring_and_maintenance">Network Monitoring and Maintenance </a></li>
+                <li><a class="nav-link" href="#references_and_additional_resources">References and Additional Resources</a></li>
+            </ul>
+        </nav> 
+    
+    <section id="introduction" class="main-section">
+        <header><h2>Introduction</h2></header>
+        <div>
+            <p><code>Networking</code> is the backbone of modern communication, enabling devices to connect and exchange data 
+                seamlessly. Whether at home, in the workplace, or across the globe, networks facilitate the transfer 
+                of information and ensure that we stay connected.</p>
+
+            <p>A <code>network</code> can be as simple as two computers connected to share files, or as complex as the 
+                internet, which links millions of devices worldwide. Understanding the fundamentals of 
+                networking is essential for setting up and maintaining a reliable home network.</p>
+            
+            <p>Setting up a home network allows you to connect multiple devices, such as computers, smartphones,
+                tablets, smart TVs, and gaming consoles, to the internet. It also enables file sharing, printer
+                access, and other convenient features. With a properly configured home network, you can 
+                ensure fast, secure, and reliable connectivity for all your devices.</p>
+
+            <p>This documentation aims to provide a comprehensive guide on networking basics and walk you through the 
+                process of setting up a home network. By the end of this guide, you will have the knowledge and 
+                confidence to build and manage your home network efficiently.</p>
+        </div>    
+    </section>
+    
+    <section id="networking_basics" class="main-section">
+        <header><h2>Networking Basics</h2></header>
+        <div>
+            <p>Understanding the basic concepts and components of a network is crucial before setting up your home network.</p>
+            <h4>Key Networking Terms</h4>
+            <ul>
+                <li>LAN (Local Area Network): A network confined to a small area, such as a home or office.</li>
+                <li>WAN (Wide Area Network): A network that spans large geographical areas.</li>
+                <li>Router: A device that directs data between your home network and the internet.</li>
+                <li>Switch: A device that connects multiple devices within a LAN.</li>
+                <li>IP Address: A unique identifier assigned to each device on a network.</li>
+                <li>MAC Address: A hardware address that uniquely identifies a device.</li>
+                <li>DHCP (Dynamic Host Configuration Protocol): Automatically assigns IP addresses to devices.</li>
+                <li>DNS (Domain Name System): Translates domain names into IP addresses.</li>
+            </ul>
+
+            <h4>Types of Networks</h4>
+            <ul>
+                <li>Wired Networks: Use Ethernet cables for connections, providing stability and speed.</li>
+                <li>Wireless Networks (Wi-Fi): Use radio signals for connectivity, offering flexibility and convenience.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="setting_up_a_home_network" class="main-section">
+        <header><h2>Setting Up a Home Network</h2></header>
+        <div>
+            <p>Setting up a home network involves several steps to ensure smooth and secure connectivity.</p>
+            <h4>Equipment Needed</h4>
+            <ul>
+                <li>Modem</li>
+                <li>Router</li>
+                <li>Ethernet Cables</li>
+                <li>Devices (e.g., PC, Laptop, Smartphone, Smart TV)</li>
+            </ul>
+
+            <h4>Step-by-Step Setup</h4>
+            <ol>
+                <li>Connect the Modem to the ISP Line: Plug the modem into the service line provided by your Internet Service Provider.</li>
+                <li>Connect the Router to the Modem: Use an Ethernet cable to link the modem and router.</li>
+                <li>Power Up Devices: Turn on the modem and router and wait for them to initialize.</li>
+                <li>Access Router Settings: Open a web browser and enter the default IP (e.g., 192.168.1.1) to configure settings.</li>
+                <li>Configure Wi-Fi Network Name (SSID) and Password: Set a unique SSID and a strong password.</li>
+                <li>Set Security Settings: Enable WPA2 or WPA3 encryption to protect your network.</li>
+            </ol>
+
+            <h4>Connecting Devices</h4>
+            <ul>
+                <li>Wired Connection: Plug devices directly into the router using Ethernet cables.</li>
+                <li>Wireless Connection: Select your SSID on devices and enter the password.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="IP_Address_and_DHCP" class="main-section">
+        <header><h2>IP Address and DHCP</h2></header>
+        <div>
+            <h4>IP Address</h4>
+            <p>An IP (Internet Protocol) address is a unique numerical label assigned to each device on a network. 
+                It serves two main purposes: identifying the host or device and providing the location address in 
+                the network. There are two types of IP addresses:</p>
+            
+            <ul>
+                <li>IPv4: A 32-bit address, represented in the format (e.g., 192.168.1.1). It is the most commonly used version.</li>
+                <li>IPv6: A 128-bit address, designed to overcome the limitations of IPv4 and support more devices.</li>
+            </ul>
+
+            <h4>Static vs. Dynamic IP Address</h4>
+            <ul>
+                <li>Static IP Address: Manually assigned to a device and remains constant. Useful for servers and devices requiring consistent access.</li>
+                <li>Dynamic IP Address: Automatically assigned by a network using DHCP and may change over time. Commonly used in home networks.</li>
+            </ul>
+
+            <h4>DHCP (Dynamic Host Configuration Protocol)</h4>
+            <p>DHCP is a network protocol that automatically assigns IP addresses to devices on a network. It simplifies the process of IP management 
+                by dynamically providing IP addresses, subnet masks, default gateways, and DNS information to devices.</p>
+
+            <h4>How DHCP Works</h4>
+            <ol>
+                <li>Device Request: When a device connects to the network, it sends a request for an IP address.</li>
+                <li>DHCP Server Response: The DHCP server assigns an available IP address to the device.</li>
+                <li>Device Configuration: The device receives the IP address along with other network configuration details.</li>
+                <li>Lease Expiry: The assigned IP address has a lease time, after which it may be renewed or reassigned.</li>
+                <p>Using DHCP is recommended in home networks as it reduces configuration errors and simplifies network management.</p>
+            </ol>
+        </div>
+    </section>
+
+    <section id="network_security" class="main-section">
+        <header><h2>Network Security</h2></header>
+        <div>
+            <p>Securing your home network is vital to protect your devices and data.</p>
+
+            <h4>Security Practices</h4>
+                <ul>
+                    <li>Change Default Router Password: Set a unique and strong admin password</li>
+                    <li>Enable Network Encryption: Use WPA2 or WPA3 encryption to prevent unauthorized access.</li>
+                    <li>MAC Address Filtering: Restrict network access to specific devices (optional)</li>
+                    <li>Update Router Firmware: Keep the firmware up to date to patch security vulnerabilities.</li>
+
+                    <p>By following these practices, you can ensure a secure and stable home network environment.</p>
+                </ul>
+        </div>
+    </section>
+        
+    <section id="troubleshooting_common_issues" class="main-section">
+        <header><h2>Troubleshooting Common Issues</h2></header>
+        <div>
+            <p>Even well-configured networks can experience issues from time to time. Here are some common problems and their solutions:</p>
+
+            <h4>Slow Internet Speed</h4>
+            <ul>
+                <li>Check Your Bandwidth Usage: Ensure no devices are using excessive bandwidth.</li>
+                <li>Restart Your Router and Modem: Power cycling can resolve temporary issues.</li>
+                <li>Check for Interference: Ensure your router is away from devices like microwaves and cordless phones.</li>
+                <li>Upgrade Your Plan: Contact your ISP if your speed is consistently slow.</li>
+            </ul>
+
+            <h4>Connection Drops Frequently</h4>
+            <ul>
+                <li>Check Cables and Connections: Ensure all cables are securely connected.</li>
+                <li>Update Firmware: Outdated router firmware can cause stability issues.</li>
+                <li>Reduce Network Load: Disconnect unused devices and limit high-bandwidth activities.</li>
+            </ul>
+
+            <h4>No Internet Connection</h4>
+            <ul>
+                <li>Check Service Status: Contact your ISP to confirm there are no outages.</li>
+                <li>Inspect Modem and Router Lights: Check for unusual light patterns indicating issues.</li>
+                <li>Reset Network Devices: Perform a factory reset if necessary, but as a last resort.</li>
+                <p>By identifying and addressing these common issues, you can maintain a stable and efficient home network.</p>
+            </ul>
+        </div>
+    </section>
+
+    <section id="advanced_home_network_setup" class="main-section">
+        <header><h2>Advanced Home Network Setup</h2></header>
+        <div>
+            <p>For those seeking to optimize their home network for better performance, greater security, or more advanced functionality, consider the following:</p>
+            <h4>Setting Up a Guest Network</h4>
+            <ul>
+                <li>Create a separate network for guests to prevent access to your main devices.</li>
+            </ul>
+
+            <h4>Quality of Service (QoS)</h4>
+            <ul>
+                <li>Prioritize specific devices or applications to ensure stable performance during high-traffic periods.</li>
+            </ul>
+
+            <h4>Port Forwarding</h4>
+            <ul>
+                <li>Enable external access to services like gaming servers or remote desktops by forwarding specific ports.</li>
+            </ul>
+
+            <h4>Mesh Wi-Fi Systems</h4>
+            <ul>
+                <li>Improve wireless coverage across large homes by using multiple access points that work together seamlessly.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="wireless_network_enhancements" class="main-section">
+        <header><h2>Wireless Network Enhancements</h2></header>
+        <div>
+            <p>Enhancing your wireless network can improve coverage, speed, and reliability.</p>
+            <h4>Placement of Router</h4>
+            <ul>
+                <li>Position the router in a central location, away from obstructions and interference sources.</li>
+            </ul>
+            <h4>Upgrading Hardware</h4>
+            <ul>
+                <li>Consider upgrading to a dual-band or tri-band router to reduce congestion and improve performance.</li>
+            </ul>
+            <h4>Extenders and Repeaters</h4>
+            <ul>
+                <li>Use Wi-Fi extenders or repeaters to boost signal strength in dead zones.</li>
+            </ul>
+            <h4>Mesh Systems</h4>
+            <ul>
+                <li>Deploy a mesh Wi-Fi system for seamless coverage across large areas.</li>
+            </ul>
+            <h4>Channel Selection</h4>
+            <ul>
+                <li>Adjust your router's channel settings to reduce interference from neighboring networks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="smart_home_integration" class="main-section">
+        <header><h2>Smart Home Integration</h2></header>
+        <div>
+            <h4>Connecting Smart Devices</h4>
+            <ul>
+                <li>Integrate smart devices like thermostats, lights, cameras, and speakers into your network for convenience and automation.</li>
+            </ul>
+            <h4>Network Segmentation</h4>
+            <ul>
+                <li>Create separate networks or VLANs for smart devices to enhance security and prevent unauthorized access to sensitive data.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="network_monitoring_and_maintenance" class="main-section">
+        <header><h2>Network Monitoring and Maintenance</h2></header>
+        <div>
+            <h4>Regular Checks</h4>
+            <ul>
+                <li>Monitor network performance and inspect for unusual activity.</li>
+            </ul>
+            <h4>Firmware Updates</h4>
+            <ul>
+                <li>Keep all network devices updated to ensure security and performance.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="references_and_additional_resources" class="main-section">
+        <header><h2>References and Additional Resources</h2></header>
+        <div>
+            <ul>
+                <li><code><a href="https://www.cisco.com" target="_blank">https://www.cisco.com</a></code></li>
+                <li><code><a href="https://www.networkworld.com" target="_blank">https://www.networkworld.com</a></code></li>
+                <li><code><a href="https://www.lifewire.com" target="_blank">https://www.lifewire.com</a></code></li>
+            </ul>
+        </div>
+    </section>
+   </main> 
+</body>
+<footer>
+    &copy; 2025 Marie Jun ygot. All rights reserved.
+</footer>
+</html>

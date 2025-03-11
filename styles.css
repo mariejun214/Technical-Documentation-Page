@@ -1,0 +1,54 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;;
+}
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%; /* Adjust the height as needed */
+  width: 250px; /* Adjust the width as needed */
+  background-color: #f8f8f8; /* Change the background color to your preference */
+  padding: 20px; /* Optional padding */
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional box-shadow for a nice effect */
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 200px; /* Adjust the width for smaller screens */
+    padding: 15px; /* Adjust the padding for smaller screens */
+  }
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333; /* Change the text color to your preference */
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc; /* Add border to each a element */
+}
+
+.main-section {
+  margin-left: 350px; /* Adjust the margin-left to the width of the nav */
+  padding: 20px; /* Optional padding */
+}
+
+footer {
+  margin: 20px 0 20px 350px;
+}
+
